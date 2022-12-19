@@ -1,1 +1,1 @@
-# the-coding-quiz
+# The Coding Quiz
