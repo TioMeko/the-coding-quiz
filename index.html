@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,37 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+
+    <header>
+        <a href="./highscores.html" id="highscore-link">View Highscores</a>
+        <p id="timer">Time: </p>
+    </header>
+
+    <main>
+        <h1 id="questions">Coding Quiz</h1>
+
+        <section id="answers">
+        <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your time by 5 seconds!</p>
+        </section>  
+
+        <section>
+            <h2 id="questionResponse"></h2>
+        </section>
+
+        <section id="showScore"></section>
+
+        <span id="startGame" ><a></a></span>
+
+        <form id="form" action="./highscores.html"></form>
+
+    </main>
 
 
 
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/quizInfo.js"></script>
 </body>
+
 </html>

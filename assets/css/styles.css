@@ -1,0 +1,100 @@
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    text-align: center;
+    padding-top: 100px;
+}
+
+#questions {
+  margin: 0 auto 20px;
+  width: 1200px;
+}
+
+#answers {
+    margin: 40px auto;
+    width: 750px;
+    font-size: 20px;
+}
+
+.choice {
+  background-color: white; /* Green */
+  border: 2px solid #008CBA;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.choiceHover:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+#highscore-link {
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 15px 0 0 15px;
+    width: 50%;
+}
+
+#timer {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+    margin: 15px 15px 0 0;
+    width: 50%;
+
+}
+
+span{
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 20px 15px;
+  perspective: 1000px;
+}
+span a{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+span a:before,
+span a:after{
+  position: absolute;
+  content: "Start Game";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+span a:before{
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after{
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
